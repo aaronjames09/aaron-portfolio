@@ -1,0 +1,252 @@
+/* Global styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust alignment of header content */
+    font-size: 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'League Spartan';
+    font-size: 50px;
+    line-height: 1;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto; /* Move navigation to the right */
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center items vertically */
+    transition: color 0.3s ease;
+    font-family: 'Montserrat';
+}
+
+nav ul li a i {
+    margin-right: 5px; /* Adjust space between icon and text */
+    margin-top: 2px;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    flex-grow: 1; /* Allow navigation to grow and take remaining space */
+}
+
+/* Section styles */
+section {
+    padding: 40px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    display: flex;
+    flex-direction: column; /* Ensure content aligns vertically */
+    align-items: flex-start; /* Align items at the start of each section */
+    margin: 20px 0; /* Adjust margin between sections */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section .container {
+    flex: 1; /* Allow sections to expand to fill available space */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Increase space between header and content */
+    font-size: 28px; /* Increase font size for section headers */
+    color: #333; /* Darker color for section headers */
+    font-style: italic;
+}
+
+section p {
+    margin: 0 0 15px 0; /* Margin below each paragraph */
+    line-height: 1.6; /* Increase line height for better readability */
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+
+section ul {
+    margin-top: 15px; /* Space above the list */
+    padding-left: 20px; /* Indentation for list items */
+    font-family: 'Montserrat';
+}
+
+section ul li {
+    margin-bottom: 8px; /* Space between list items */
+    font-family: 'Montserrat';
+}
+
+section .courses-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow courses to wrap to the next line */
+}
+
+section .semester {
+    width: calc(33.33% - 1px); /* Calculate width for each semester with spacing */
+    margin-right: 50px; /* Space between semesters */
+    margin-bottom: 30px; /* Space below each semester */
+}
+
+section .semester h3 {
+    font-size: 24px; /* Semester title font size */
+    margin-bottom: 15px; /* Space below semester title */
+    white-space: nowrap; 
+}
+
+section .semester ul {
+    list-style: none;
+    padding: 0;
+}
+
+section .semester ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* About Me section specific styles */
+#about .about-container {
+    display: flex;
+    flex-direction: column; /* Ensure paragraphs in About Me align vertically */
+    align-items: flex-start; /* Align items at the start */
+}
+
+#about .about-container p {
+    margin-bottom: 15px; /* Margin below each paragraph */
+    line-height: 1.6;
+    font-size: 16px;
+    white-space: normal; /* Ensure text wraps properly */
+}
+
+#about {
+    background-color: #f9f9f9; /* Light gray background for About section */
+}
+
+#education {
+    background-color: #eaf5ff; /* Light blue background for Education section */
+}
+
+#skills {
+    background-color: #f2f2f2; /* Lighter gray background for Skills section */
+}
+
+#courses {
+    background-color: #f0f9eb; /* Light green background for Courses section */
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    section .courses-container {
+        flex-direction: column;
+    }
+
+    section .semester {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+}
