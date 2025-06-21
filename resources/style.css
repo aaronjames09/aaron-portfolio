@@ -219,25 +219,25 @@ footer {
 
 /* Modal Styles */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    backdrop-filter: blur(10px); /* adds blur */
-    background-color: rgba(255, 255, 255, 0.1); /* slight tint (optional) */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(10px); /* This adds the blur effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: adds soft white overlay */
 }
 
 .modal::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: transparent; /* changed from dark to transparent */
+  z-index: -1;
 }
 
 .modal-content {
