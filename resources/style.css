@@ -316,18 +316,19 @@ footer {
 }
 
 .shiny-text {
-  color: #ffffff20;
+  color: #ffffff33; /* transparent base */
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 70%
   );
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   display: inline-block;
-  animation: shine 5s linear infinite;
+  animation: shine 2.5s linear infinite;
 }
 
 @keyframes shine {
