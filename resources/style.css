@@ -74,7 +74,7 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #3e59af;
 }
 
 nav ul {
@@ -322,22 +322,22 @@ footer {
 }
 
 .shiny-text::before {
-  content: attr(data-text); /* Duplicate text for shimmer */
+  content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0) 70%
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 80%
   );
-  background-size: 200% 100%;
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: shine 3s linear infinite;
+  animation: shine 1.8s linear infinite;
   pointer-events: none;
 }
 
