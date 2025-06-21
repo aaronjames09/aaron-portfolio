@@ -316,7 +316,17 @@ footer {
 }
 
 .shiny-text {
-  color: #ffffff33; /* transparent base */
+  color: #fff; /* Fallback visible color */
+  position: relative;
+  display: inline-block;
+}
+
+.shiny-text::before {
+  content: attr(data-text); /* Duplicate text for shimmer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 30%,
@@ -327,8 +337,8 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  display: inline-block;
-  animation: shine 2.5s linear infinite;
+  animation: shine 3s linear infinite;
+  pointer-events: none;
 }
 
 @keyframes shine {
