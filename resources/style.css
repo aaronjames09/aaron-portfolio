@@ -103,6 +103,7 @@ section h2 {
   font-size: 28px;
   font-weight: 700;
   background: linear-gradient(90deg, #2b5876, #4e4376);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -242,12 +243,14 @@ footer {
 }
 
 .modal-content {
-    display: block;
-    margin: auto;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
-    animation: fadeIn 0.4s ease-in-out;
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease-in-out;
+  border: 5px solid #060606; /*  change color to your preference */
+  box-shadow: 0 0 20px rgba(0, 64, 255, 0.7); /* Optional glowing effect */
 }
 
 @keyframes fadeIn {
