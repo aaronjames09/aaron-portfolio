@@ -1,8 +1,7 @@
-/* Global styles */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
 html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,11 +11,11 @@ body {
     color: #333;
     background-color: #f0f0f0;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 * {
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .container {
@@ -31,7 +30,7 @@ header {
     padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust alignment of header content */
+    justify-content: space-between;
     font-size: 24px;
 }
 
@@ -52,7 +51,7 @@ nav ul {
 }
 
 nav {
-    margin-left: auto; /* Move navigation to the right */
+    margin-left: auto;
 }
 
 nav ul li {
@@ -63,85 +62,84 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    display: flex; /* Align icon and text horizontally */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    align-items: center;
     transition: color 0.3s ease;
     font-family: 'Montserrat';
 }
 
 nav ul li a i {
-    margin-right: 5px; /* Adjust space between icon and text */
+    margin-right: 5px;
     margin-top: 2px;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+    color: #ffd700;
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    flex-grow: 1; /* Allow navigation to grow and take remaining space */
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
-/* Section styles */
 section {
-    padding: 40px; /* Add padding for spacing */
-    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+    padding: 40px;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Ensure content aligns vertically */
-    align-items: flex-start; /* Align items at the start of each section */
-    margin: 20px 0; /* Adjust margin between sections */
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section .container {
-    flex: 1; /* Allow sections to expand to fill available space */
+    flex: 1;
 }
 
 section h2 {
-    margin-bottom: 20px; /* Increase space between header and content */
-    font-size: 28px; /* Increase font size for section headers */
-    color: #333; /* Darker color for section headers */
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
     font-style: italic;
 }
 
 section p {
-    margin: 0 0 15px 0; /* Margin below each paragraph */
-    line-height: 1.6; /* Increase line height for better readability */
+    margin: 0 0 15px 0;
+    line-height: 1.6;
     text-align: justify;
     font-size: 16px;
     font-family: 'Montserrat';
 }
 
 section ul {
-    margin-top: 15px; /* Space above the list */
-    padding-left: 20px; /* Indentation for list items */
+    margin-top: 15px;
+    padding-left: 20px;
     font-family: 'Montserrat';
 }
 
 section ul li {
-    margin-bottom: 8px; /* Space between list items */
+    margin-bottom: 8px;
     font-family: 'Montserrat';
 }
 
 section .courses-container {
     display: flex;
-    flex-wrap: wrap; /* Allow courses to wrap to the next line */
+    flex-wrap: wrap;
 }
 
 section .semester {
-    width: calc(33.33% - 1px); /* Calculate width for each semester with spacing */
-    margin-right: 50px; /* Space between semesters */
-    margin-bottom: 30px; /* Space below each semester */
+    width: calc(33.33% - 1px);
+    margin-right: 50px;
+    margin-bottom: 30px;
 }
 
 section .semester h3 {
-    font-size: 24px; /* Semester title font size */
-    margin-bottom: 15px; /* Space below semester title */
-    white-space: nowrap; 
+    font-size: 24px;
+    margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 section .semester ul {
@@ -150,45 +148,119 @@ section .semester ul {
 }
 
 section .semester ul li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
 }
 
-/* About Me section specific styles */
 #about .about-container {
     display: flex;
-    flex-direction: column; /* Ensure paragraphs in About Me align vertically */
-    align-items: flex-start; /* Align items at the start */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #about .about-container p {
-    margin-bottom: 15px; /* Margin below each paragraph */
+    margin-bottom: 15px;
     line-height: 1.6;
     font-size: 16px;
-    white-space: normal; /* Ensure text wraps properly */
+    white-space: normal;
 }
 
 #about {
-    background-color: #f9f9f9; /* Light gray background for About section */
+    background-color: #f9f9f9;
 }
 
 #education {
-    background-color: #eaf5ff; /* Light blue background for Education section */
+    background-color: #eaf5ff;
 }
 
 #skills {
-    background-color: #f2f2f2; /* Lighter gray background for Skills section */
+    background-color: #f2f2f2;
 }
 
 #courses {
-    background-color: #f0f9eb; /* Light green background for Courses section */
+    background-color: #f0f9eb;
 }
 
-/* Footer styles */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+#cert-images {
+    background-color: #ffffff;
+}
+
+.certificates-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate {
+    text-align: center;
+}
+
+.certificate img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.certificate .caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    font-family: 'Montserrat';
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Responsive styles */
@@ -231,6 +303,43 @@ footer {
         width: 100%;
         margin-right: 0;
     }
+
+    .certificates-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificate img {
+        width: 80%;
+    }
+}
+
+.shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
 }
 
 @media (max-width: 480px) {
