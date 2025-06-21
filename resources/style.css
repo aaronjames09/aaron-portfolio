@@ -250,7 +250,7 @@ footer {
   border-radius: 10px;
   animation: fadeIn 0.4s ease-in-out;
   border: 5px solid #060606; /*  change color to your preference */
-  box-shadow: 0 0 20px rgba(0, 64, 255, 0.7); /* Optional glowing effect */
+  box-shadow: 0 0 20px rgba(38, 43, 55, 0.7); /* Optional glowing effect */
 }
 
 @keyframes fadeIn {
