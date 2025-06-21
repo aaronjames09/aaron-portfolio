@@ -100,10 +100,11 @@ section .container {
 }
 
 section h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-    font-style: italic;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 section p {
