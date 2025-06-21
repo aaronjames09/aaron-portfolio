@@ -35,11 +35,14 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-family: 'League Spartan';
-    font-size: 50px;
-    line-height: 1;
-    flex: 1;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 60px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ffffff, #dddddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -74,7 +77,7 @@ nav ul li a i {
 }
 
 nav ul li a:hover {
-    color: #3e59af;
+    color: #5f77c7;
 }
 
 nav ul {
@@ -318,6 +321,10 @@ footer {
 .shiny-text {
   color: #fff; /* Fallback visible color */
   position: relative;
+  -webkit-background-clip: text; /* For Chrome, Safari, Edge (WebKit-based) */
+  background-clip: text;         /* Standard property — fixes the warning */
+  -webkit-text-fill-color: transparent; /* Needed for text transparency in WebKit */
+  color: transparent;
   display: inline-block;
 }
 
@@ -337,7 +344,7 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: shine 1.8s linear infinite;
+  animation: shine 2.4s linear infinite;
   pointer-events: none;
 }
 
