@@ -178,8 +178,8 @@ section .semester ul li {
     background-color: #dcd4cb;
 }
 
-#cert-images {
-    background-color: #e2dbd3;
+#certifications {
+  background-color: #e2dbd3;
 }
 
 #courses {
@@ -191,6 +191,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+#cert-images {
+    background-color: #e2dbd3;
 }
 
 .certificates-grid {
