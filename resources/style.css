@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f0f0f0;
+    background-color: #faf7f0;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -167,19 +167,23 @@ section .semester ul li {
 }
 
 #about {
-    background-color: #f9f9f9;
+    background-color: #f5f1e7;
 }
 
 #education {
-    background-color: #eaf5ff;
+    background-color: #e5dfd6;
 }
 
 #skills {
-    background-color: #f2f2f2;
+    background-color: #f5f1e7;
 }
 
 #courses {
-    background-color: #f0f9eb;
+    background-color: #e5dfd6;
+}
+
+#cert-images {
+    background-color: #f5f1e7;
 }
 
 footer {
@@ -187,10 +191,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-
-#cert-images {
-    background-color: #ffffff;
 }
 
 .certificates-grid {
