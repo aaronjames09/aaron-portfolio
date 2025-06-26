@@ -11,6 +11,11 @@
 </head>
 
 <body>
+  <!-- Loader Screen -->
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+    <p class="loading-text">Loading Aaron's Portfolio...</p>
+  </div>
   <header>
     <div class="container">
       <h1>Aaron James</h1>
@@ -158,6 +163,12 @@
     <span class="close">&times;</span>
     <img class="modal-content" id="modalImg">
   </div>
+  <script>
+  window.addEventListener("load", function () {
+    // When all assets are loaded
+    document.body.classList.add("loaded");
+  });
+  </script>
 
 </body>
 </html>
