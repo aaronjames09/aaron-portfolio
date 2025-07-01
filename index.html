@@ -1,258 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aaron James - Portfolio</title>
-  <link rel="stylesheet" href="resources/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=League+Spartan" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <style>
-    .section-content {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Loader Screen -->
-  <div id="loader-wrapper">
-    <div class="loader"></div>
-    <p class="loading-text">Loading Aaron's Portfolio...</p>
-  </div>
-
-  <header>
-    <div class="container">
-      <h1>Aaron James</h1>
-      <nav class="nav-right">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron James - Portfolio</title>
+    <link rel="stylesheet" href="resources/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=League+Spartan" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+      .section-content {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader Screen -->
+    <div id="loader-wrapper">
+      <div class="loader"></div>
+      <p class="loading-text">Loading Aaron's Portfolio...</p>
+    </div>
+    <header>
+      <div class="container">
+        <h1>Aaron James</h1>
+        <nav class="nav-right">
+          <ul>
+            <li>
+              <a href="#about" class="shiny-text" data-text="About Me">About Me</a>
+            </li>
+            <li>
+              <a href="#education" class="shiny-text" data-text="Education">Education</a>
+            </li>
+            <li>
+              <a href="#techstack" class="shiny-text" data-text="Tech Stack">Tech Stack</a>
+            </li>
+            <li>
+              <a href="#certifications" class="shiny-text" data-text="Certifications">Certifications</a>
+            </li>
+            <li>
+              <a href="#courses" class="shiny-text" data-text="Courses">Courses</a>
+            </li>
+            <li>
+              <a href="resources/docs/Resume.pdf" class="shiny-text" data-text="Resume" title="Download my resume!">Resume</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/aaron-james-44b102315/" target="_blank" class="shiny-text" data-text="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showEmailPopup()" class="shiny-text" data-text="">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="about" class="container">
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>Hi! I'm <strong>Aaron James</strong>, a passionate Computer Science Engineering student at <strong>Rajagiri School of Engineering and Technology</strong> (Batch of 2022-2026). </p>
+        <p>Now in my <strong>fourth year</strong>, I've completed two internships focused on <strong>software development</strong> and <strong>testing</strong>. I also enjoy solving real-world problems through code. </p>
+        <p>My core strengths lie in <strong>Python programming</strong> and working with <strong>SQL databases</strong>. I'm drawn to building efficient, logical solutions and have been passionate about programming since my school days. </p>
+        <p>I completed <strong>Class 10</strong> at <strong>Delhi Public School, Bengaluru</strong> and continued my education at <strong>Rajagiri Christhu Jayanthi Public School</strong>, where I deepened my interest in technology. </p>
+        <p>Beyond academics, I enjoy playing the <strong>piano</strong> and <strong>football</strong>, which help me stay creative, focused and balanced. </p>
+      </div>
+    </section>
+    <section id="education" class="container">
+      <div class="section-content">
+        <h2>Education</h2>
+        <p>
+          <strong>Rajagiri School of Engineering and Technology</strong> | B.Tech in CSE | 2022 - Present
+        </p>
+        <br>
+        <p>
+          <strong>Rajagiri Christhu Jayanthi Public School</strong> | 2020-2022
+        </p>
+        <p>
+          <strong>Delhi Public School</strong> | 2019-2020
+        </p>
+      </div>
+    </section>
+    <section id="techstack" class="container">
+      <div class="section-content">
+        <h2>Tech Stack</h2>
+        <div class="tech-grid">
+          <!-- Row 1 -->
+          <div class="tech-card">
+            <i class="devicon-c-plain colored"></i>
+            <p>C</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-python-plain colored"></i>
+            <p>Python</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-java-plain colored"></i>
+            <p>Java</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-cplusplus-plain colored"></i>
+            <p>C++</p>
+          </div>
+          <!-- Row 2 -->
+          <div class="tech-card">
+            <i class="devicon-html5-plain colored"></i>
+            <p>HTML</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-css3-plain colored"></i>
+            <p>CSS</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-react-original colored"></i>
+            <p>React.js</p>
+          </div>
+          <!-- Row 3 -->
+          <div class="tech-card">
+            <i class="devicon-nodejs-plain colored"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-mysql-plain colored"></i>
+            <p>MySQL</p>
+          </div>
+          <div class="tech-card">
+            <i class="devicon-mongodb-plain colored"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="tech-card">
+            <img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png" alt="Postman" class="custom-icon">
+            <p>Postman</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certifications" class="container">
+      <div class="section-content">
+        <h2>Certifications</h2>
         <ul>
           <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="#about" class="shiny-text" data-text="About Me">About Me</a>
-              </div>
+            <strong>Full Stack Developer Bootcamp - GeeksforGeeks</strong>
+            <br> Learned frontend and backend development with React, Node.js and MongoDB. <div class="certificate">
+              <img src="images/gfg-full-stack-course.jpg" alt="GFG Full Stack Course" onclick="openModal(this)">
             </div>
           </li>
           <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="#education" class="shiny-text" data-text="Education">Education</a>
-              </div>
+            <strong>EA Software Engineering Virtual Experience - Forage</strong>
+            <br> Proposed a new feature, created a game object class, improved the inventory system and implemented a live bugfix. <div class="certificate">
+              <img src="images/ea-software-engineering-job-simulation.jpg" alt="EA Software Engineering Job Simulation" onclick="openModal(this)">
             </div>
           </li>
           <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="#techstack" class="shiny-text" data-text="Tech Stack">Tech Stack</a>
-              </div>
+            <strong>Accenture NA Coding Simulation - Forage</strong>
+            <br> Built a search feature with Spring Boot, set up CI with Jenkins and planned sprints in Agile. <div class="certificate">
+              <img src="images/accenture-job-simulation-certificate.jpg" alt="Accenture Job Simulation" onclick="openModal(this)">
             </div>
           </li>
           <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="#certifications" class="shiny-text" data-text="Certifications">Certifications</a>
-              </div>
+            <strong>Google Cloud Computing Foundations - NPTEL</strong>
+            <br> 8-week course on Google Cloud and core services. <div class="certificate">
+              <img src="images/nptel-certificate.jpg" alt="NPTEL Certificate" onclick="openModal(this)">
             </div>
           </li>
-          <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="#courses" class="shiny-text" data-text="Courses">Courses</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="star-border-container">
-              <span class="border-gradient-top"></span>
-              <span class="border-gradient-bottom"></span>
-              <div class="inner-content">
-                <a href="resources/docs/Resume.pdf" class="shiny-text" data-text="Resume" title="Download my resume!">Resume</a>
-              </div>
-            </div>
-          </li>
-          <li><a href="https://www.linkedin.com/in/aaron-james-44b102315/" target="_blank" class="shiny-text" data-text=""><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="#" onclick="showEmailPopup()" class="shiny-text" data-text=""><i class="far fa-envelope"></i></a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="about" class="container">
-    <div class="section-content">
-      <h2>About Me</h2>
-      <p>Hi! I'm <strong>Aaron James</strong>, a passionate Computer Science Engineering student at <strong>Rajagiri School of Engineering and Technology</strong> (Batch of 2022-2026).</p>
-      <p>Now in my <strong>fourth year</strong>, I've completed two internships focused on <strong>software development</strong> and <strong>testing</strong>. I also enjoy solving real-world problems through code.</p>
-      <p>My core strengths lie in <strong>Python programming</strong> and working with <strong>SQL databases</strong>. I'm drawn to building efficient, logical solutions and have been passionate about programming since my school days.</p>
-      <p>I completed <strong>Class 10</strong> at <strong>Delhi Public School, Bengaluru</strong> and continued my education at <strong>Rajagiri Christhu Jayanthi Public School</strong>, where I deepened my interest in technology.</p>
-      <p>Beyond academics, I enjoy playing the <strong>piano</strong> and <strong>football</strong>, which help me stay creative, focused and balanced.</p>
-    </div>
-  </section>
-
-  <section id="education" class="container">
-    <div class="section-content">
-      <h2>Education</h2>
-      <p><strong>Rajagiri School of Engineering and Technology</strong> | B.Tech in CSE | 2022 - Present</p>
-      <br>
-      <p><strong>Rajagiri Christhu Jayanthi Public School</strong> | 2020-2022</p>
-      <p><strong>Delhi Public School</strong> | 2019-2020</p>
-    </div>
-  </section>
-
-  <section id="techstack" class="container">
-    <div class="section-content">
-      <h2>Tech Stack</h2>
-      <div class="tech-grid">
-        <!-- Row 1 -->
-        <div class="tech-card"><i class="devicon-c-plain colored"></i><p>C</p></div>
-        <div class="tech-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
-        <div class="tech-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
-        <div class="tech-card"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
-
-        <!-- Row 2 -->
-        <div class="tech-card"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
-        <div class="tech-card"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
-        <div class="tech-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
-        <div class="tech-card"><i class="devicon-react-original colored"></i><p>React.js</p></div>
-
-        <!-- Row 3 -->
-        <div class="tech-card"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
-        <div class="tech-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
-        <div class="tech-card"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
-        <div class="tech-card">
-          <img src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png" alt="Postman" class="custom-icon">
-          <p>Postman</p>
+      </div>
+    </section>
+    <section id="courses" class="container">
+      <div class="section-content">
+        <h2>Core Courses Undertook</h2>
+        <div class="courses-container">
+          <div class="semester">
+            <ul>
+              <li>Computer Organization and Architecture</li>
+              <li>Data Structures</li>
+              <li>Graph Theory</li>
+              <li>Design & Engineering</li>
+            </ul>
+          </div>
+          <div class="semester">
+            <ul>
+              <li>Database Management Systems</li>
+              <li>Operating Systems</li>
+              <li>Programming in C</li>
+              <li>OOP using Java</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; Aaron James, 2024</p>
+      </div>
+    </footer>
+    <!-- Image Modal -->
+    <div id="certModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
     </div>
-  </section>
-
-  <section id="certifications" class="container">
-    <div class="section-content">
-      <h2>Certifications</h2>
-      <ul>
-        <li>
-          <strong>Full Stack Developer Bootcamp - GeeksforGeeks</strong><br>
-          Learned frontend and backend development with React, Node.js and MongoDB.
-          <div class="certificate">
-            <img src="images/gfg-full-stack-course.jpg" alt="GFG Full Stack Course" onclick="openModal(this)">
-          </div>
-        </li>
-        <li>
-          <strong>EA Software Engineering Virtual Experience - Forage</strong><br>
-          Proposed a new feature, created a game object class, improved the inventory system and implemented a live bugfix.
-          <div class="certificate">
-            <img src="images/ea-software-engineering-job-simulation.jpg" alt="EA Software Engineering Job Simulation" onclick="openModal(this)">
-          </div>
-        </li>
-        <li>
-          <strong>Accenture NA Coding Simulation - Forage</strong><br>
-          Built a search feature with Spring Boot, set up CI with Jenkins and planned sprints in Agile.
-          <div class="certificate">
-            <img src="images/accenture-job-simulation-certificate.jpg" alt="Accenture Job Simulation" onclick="openModal(this)">
-          </div>
-        </li>
-        <li>
-          <strong>Google Cloud Computing Foundations - NPTEL</strong><br>
-          8-week course on Google Cloud and core services.
-          <div class="certificate">
-            <img src="images/nptel-certificate.jpg" alt="NPTEL Certificate" onclick="openModal(this)">
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="courses" class="container">
-    <div class="section-content">
-      <h2>Core Courses Undertook</h2>
-      <div class="courses-container">
-        <div class="semester">
-          <ul>
-            <li>Computer Organization and Architecture</li>
-            <li>Data Structures</li>
-            <li>Graph Theory</li>
-            <li>Design & Engineering</li>
-          </ul>
-        </div>
-        <div class="semester">
-          <ul>
-            <li>Database Management Systems</li>
-            <li>Operating Systems</li>
-            <li>Programming in C</li>
-            <li>OOP using Java</li>
-          </ul>
-        </div>
+    <!-- Email Modal -->
+    <div id="emailModal" class="email-modal">
+      <div class="email-modal-content">
+        <span class="close-email" onclick="closeEmailModal()">&times;</span>
+        <h3>Contact Me</h3>
+        <p>Email: <a href="mailto:aaron.jamesae@gmail.com">aaron.jamesae@gmail.com</a>
+        </p>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Aaron James, 2024</p>
-    </div>
-  </footer>
-
-  <!-- Image Modal -->
-  <div id="certModal" class="modal" onclick="closeModal()">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-  </div>
-
-  <!-- Email Modal -->
-  <div id="emailModal" class="email-modal">
-    <div class="email-modal-content">
-      <span class="close-email" onclick="closeEmailModal()">&times;</span>
-      <h3>Contact Me</h3>
-      <p>Email: <a href="mailto:aaron.jamesae@gmail.com">aaron.jamesae@gmail.com</a></p>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    function openModal(img) {
-      const modal = document.getElementById("certModal");
-      const modalImg = document.getElementById("modalImg");
-      modal.style.display = "block";
-      modalImg.src = img.src;
-    }
-
-    function closeModal() {
-      document.getElementById("certModal").style.display = "none";
-    }
-
-    window.addEventListener("load", function () {
-      document.body.classList.add("loaded");
-    });
-
-    function showEmailPopup() {
-      document.getElementById("emailModal").style.display = "flex";
-    }
-
-    function closeEmailModal() {
-      document.getElementById("emailModal").style.display = "none";
-    }
-
-    window.addEventListener("click", function (e) {
-      const modal = document.getElementById("emailModal");
-      if (e.target === modal) {
-        closeEmailModal();
+    <!-- JavaScript -->
+    <script>
+      function openModal(img) {
+        const modal = document.getElementById("certModal");
+        const modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
       }
-    });
-  </script>
-  
-</body>
+
+      function closeModal() {
+        document.getElementById("certModal").style.display = "none";
+      }
+      window.addEventListener("load", function() {
+        document.body.classList.add("loaded");
+      });
+
+      function showEmailPopup() {
+        document.getElementById("emailModal").style.display = "flex";
+      }
+
+      function closeEmailModal() {
+        document.getElementById("emailModal").style.display = "none";
+      }
+      window.addEventListener("click", function(e) {
+        const modal = document.getElementById("emailModal");
+        if (e.target === modal) {
+          closeEmailModal();
+        }
+      });
+    </script>
+  </body>
 </html>

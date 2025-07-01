@@ -38,7 +38,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   font-size: 50px;
   line-height: 1;
   flex: 1;
@@ -68,7 +68,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   transition: color 0.3s ease;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 nav ul li a:hover {
@@ -112,13 +112,13 @@ section p {
   margin: 0 0 15px 0;
   line-height: 1.6;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 section ul {
   margin-top: 15px;
   padding-left: 20px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 section ul li {
@@ -199,7 +199,7 @@ footer {
 .certificate .caption {
   font-size: 14px;
   margin-top: 8px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 #certifications ul {
@@ -232,7 +232,7 @@ footer {
   width: 300px;
   position: relative;
   box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .close-email {
@@ -260,7 +260,7 @@ footer {
 }
 
 .modal::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   background: transparent;
@@ -308,7 +308,7 @@ footer {
 .tech-stack-section h2 {
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-bottom: 30px;
 }
 
@@ -332,13 +332,13 @@ footer {
   max-width: 160px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);      
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* Hover glow effect */
 .tech-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(95, 119, 199, 0.5); 
+  box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
 }
 
 .tech-card i,
@@ -350,7 +350,7 @@ footer {
 }
 
 .tech-card p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -380,7 +380,7 @@ footer {
 
 .loading-text {
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   opacity: 0.85;
@@ -411,7 +411,12 @@ footer {
   content: attr(data-text);
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
   background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -478,7 +483,7 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 /* Responsive Styles */
