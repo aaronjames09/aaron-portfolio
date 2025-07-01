@@ -1,102 +1,93 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
+/* Global Styles */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #2f2f2f;
-    background-color: #faf7f0;
-    line-height: 1.6;
-    overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2f2f2f;
+  background-color: #faf7f0;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Header */
 header {
-    background: #1e1e1e;
-    color: #fff;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
 }
 
 header h1 {
-    margin: 0;
-    font-family: 'League Spartan';
-    font-size: 50px;
-    line-height: 1;
-    flex: 1;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-    align-items: center;
+  margin: 0;
+  font-family: 'League Spartan';
+  font-size: 50px;
+  line-height: 1;
+  flex: 1;
 }
 
 nav {
-    margin-left: auto;
-}
-
-nav ul li {
-    margin-left: 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat';
-}
-
-nav ul li a i {
-    margin-right: 5px;
-    margin-top: 2px;
-}
-
-nav ul li a:hover {
-    color: #5f77c7;
+  margin-left: auto;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat';
+}
+
+nav ul li a:hover {
+  color: #5f77c7;
+}
+
+nav ul li a i {
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+/* Section Styling */
 section {
-    padding: 40px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section .container {
-    flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
@@ -110,74 +101,41 @@ section h2 {
   -webkit-text-fill-color: transparent;
 }
 
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 section p {
-    margin: 0 0 15px 0;
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 16px;
-    font-family: 'Montserrat';
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: 'Montserrat';
 }
 
 section ul {
-    margin-top: 15px;
-    padding-left: 20px;
-    font-family: 'Montserrat';
+  margin-top: 15px;
+  padding-left: 20px;
+  font-family: 'Montserrat';
 }
 
 section ul li {
-    margin-bottom: 8px;
-    font-family: 'Montserrat';
+  margin-bottom: 8px;
 }
 
-section .courses-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section .semester {
-    width: calc(33.33% - 1px);
-    margin-right: 50px;
-    margin-bottom: 30px;
-}
-
-section .semester h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-}
-
-section .semester ul {
-    list-style: none;
-    padding: 0;
-}
-
-section .semester ul li {
-    margin-bottom: 10px;
-}
-
-#about .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#about .about-container p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-size: 16px;
-    white-space: normal;
-}
-
+/* Specific Section Backgrounds */
 #about {
-    background-color: #f1e6d7;
+  background-color: #f1e6d7;
 }
 
 #education {
-    background-color: #e9d7bd;
+  background-color: #e9d7bd;
 }
 
 #skills {
-    background-color: #f1e6d7;
+  background-color: #f1e6d7;
 }
 
 #certifications {
@@ -185,47 +143,66 @@ section .semester ul li {
 }
 
 #courses {
-    background-color: #f1e6d7;
+  background-color: #f1e6d7;
 }
 
+/* Courses */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.semester {
+  width: calc(33.33% - 1px);
+  margin-bottom: 30px;
+}
+
+.semester ul {
+  list-style: none;
+  padding: 0;
+}
+
+.semester ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
-    background: #1e1e1e;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-#cert-images {
-    background-color: #e2dbd3;
-}
-
+/* Certificates */
 .certificates-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .certificate {
-    text-align: center;
+  text-align: center;
 }
 
 .certificate img {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .certificate .caption {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 8px;
-    font-family: 'Montserrat';
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: 'Montserrat';
 }
 
-/* Modal Styles */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -236,15 +213,15 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  backdrop-filter: blur(10px); /* This adds the blur effect */
-  background-color: rgba(255, 255, 255, 0.1); /* Optional: adds soft white overlay */
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .modal::before {
   content: '';
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: transparent; /* changed from dark to transparent */
+  inset: 0;
+  background: transparent;
   z-index: -1;
 }
 
@@ -255,25 +232,32 @@ footer {
   max-height: 80%;
   border-radius: 10px;
   animation: fadeIn 0.4s ease-in-out;
-  border: 5px solid #060606; /*  change color to your preference */
-  box-shadow: 0 0 20px rgba(38, 43, 55, 0.7); /* Optional glowing effect */
+  border: 5px solid #060606;
+  box-shadow: 0 0 20px rgba(38, 43, 55, 0.7);
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .close {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+/* Tech Stack Grid */
 .tech-stack-section {
   margin-top: 40px;
   text-align: center;
@@ -300,16 +284,15 @@ footer {
   border: 2px solid #e0e0e0;
   border-radius: 12px;
   padding: 25px 10px;
-  width: 100%;
   max-width: 160px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .tech-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tech-card i {
@@ -328,111 +311,10 @@ footer {
   margin: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 36px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-    section p {
-        font-size: 14px;
-    }
-
-    section .courses-container {
-        flex-direction: column;
-    }
-
-    section .semester {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .certificates-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .certificate img {
-        width: 80%;
-    }
-}
-
-.shiny-text {
-  color: #fff; /* Fallback visible color */
-  position: relative;
-  display: inline-block;
-}
-
-.shiny-text::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(
-    100deg,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0.9) 50%,
-    rgba(255, 255, 255, 0) 80%
-  );
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shine 2.4s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: -100%;
-  }
-}
-
-.shiny-text.disabled {
-  animation: none;
-}
-
-/* Loader Styles */
+/* Loader */
 #loader-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: #1e1e1e;
   z-index: 9999;
   display: flex;
@@ -461,30 +343,118 @@ footer {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-/* Hide loader when done */
 .loaded #loader-wrapper {
   opacity: 0;
   visibility: hidden;
 }
 
+/* Animated Shine Text */
+.shiny-text {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.shiny-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 80%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 2.4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .semester {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .certificate img {
+    width: 80%;
+  }
+}
+
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
+  header h1 {
+    font-size: 28px;
+  }
 
-    nav ul li a {
-        font-size: 16px;
-    }
+  nav ul li a {
+    font-size: 16px;
+  }
 
-    section h2 {
-        font-size: 20px;
-    }
+  section h2 {
+    font-size: 20px;
+  }
 
-    section p {
-        font-size: 12px;
-    }
+  section p {
+    font-size: 12px;
+  }
 }
