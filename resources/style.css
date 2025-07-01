@@ -134,7 +134,7 @@ section ul li {
   background-color: #e9d7bd;
 }
 
-#techstacks {
+#techstack {
   background-color: #f1e6d7;
 }
 
@@ -228,7 +228,7 @@ footer {
   border-radius: 12px;
   padding: 30px;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
   width: 300px;
   position: relative;
   box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
