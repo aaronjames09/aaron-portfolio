@@ -50,7 +50,7 @@
       <p>Now in my <strong>fourth year</strong>, I've completed two internships focused on <strong>software development</strong> and <strong>testing</strong>. I also enjoy solving real-world problems through code.</p>
       <p>My core strengths lie in <strong>Python programming</strong> and working with <strong>SQL databases</strong>. I'm drawn to building efficient, logical solutions and have been passionate about programming since my school days.</p>
       <p>I completed <strong>Class 10</strong> at <strong>Delhi Public School, Bengaluru</strong> and continued my education at <strong>Rajagiri Christhu Jayanthi Public School</strong>, where I deepened my interest in technology.</p>
-      <p>Beyond academics, I enjoy playing the <strong>piano</strong> and <strong>football</strong>, which help me stay creative, focused, and balanced.</p>
+      <p>Beyond academics, I enjoy playing the <strong>piano</strong> and <strong>football</strong>, which help me stay creative, focused and balanced.</p>
     </div>
   </section>
 
@@ -136,13 +136,13 @@
           <ul>
             <li>Computer Organization and Architecture</li>
             <li>Data Structures</li>
-            <li>Database Management Systems</li>
+            <li>Graph Theory</li>
             <li>Design & Engineering</li>
           </ul>
         </div>
         <div class="semester">
           <ul>
-            <li>Graph Theory</li>
+            <li>Database Management Systems</li>
             <li>Operating Systems</li>
             <li>Programming in C</li>
             <li>OOP using Java</li>
@@ -164,6 +164,15 @@
     <img class="modal-content" id="modalImg">
   </div>
 
+  <!-- Email Modal -->
+  <div id="emailModal" class="email-modal">
+    <div class="email-modal-content">
+      <span class="close-email" onclick="closeEmailModal()">&times;</span>
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:aaron.jamesae@gmail.com">aaron.jamesae@gmail.com</a></p>
+    </div>
+  </div>
+
   <!-- JavaScript -->
   <script>
     function openModal(img) {
@@ -177,13 +186,25 @@
       document.getElementById("certModal").style.display = "none";
     }
 
-    function showEmailPopup() {
-      alert("Email: aaron.jamesae@gmail.com");
-    }
-
     window.addEventListener("load", function () {
       document.body.classList.add("loaded");
     });
+
+    function showEmailPopup() {
+      document.getElementById("emailModal").style.display = "flex";
+    }
+
+    function closeEmailModal() {
+      document.getElementById("emailModal").style.display = "none";
+    }
+
+    window.addEventListener("click", function (e) {
+      const modal = document.getElementById("emailModal");
+      if (e.target === modal) {
+        closeEmailModal();
+      }
+    });
   </script>
+  
 </body>
 </html>
