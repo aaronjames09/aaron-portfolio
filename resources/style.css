@@ -222,7 +222,7 @@ footer {
 }
 
 .email-modal-content {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(12px);
   border-radius: 12px;
   padding: 30px;
