@@ -433,6 +433,54 @@ footer {
   animation: none;
 }
 
+.star-border-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.inner-content {
+  position: relative;
+  border: 1px solid #222;
+  background: #000;
+  padding: 6px 14px;
+  border-radius: 20px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.border-gradient-top,
+.border-gradient-bottom {
+  position: absolute;
+  width: 300%;
+  height: 50%;
+  opacity: 0.7;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.border-gradient-bottom {
+  bottom: -12px;
+  right: -250%;
+  animation: star-movement-bottom 4s linear infinite alternate;
+}
+
+.border-gradient-top {
+  top: -12px;
+  left: -250%;
+  animation: star-movement-top 4s linear infinite alternate;
+}
+
+.inner-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Montserrat';
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   header {
