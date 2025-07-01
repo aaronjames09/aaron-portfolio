@@ -134,7 +134,7 @@ section ul li {
   background-color: #e9d7bd;
 }
 
-#skills {
+#techstacks {
   background-color: #f1e6d7;
 }
 
@@ -200,6 +200,11 @@ footer {
   font-size: 14px;
   margin-top: 8px;
   font-family: 'Montserrat';
+}
+
+#certifications ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Modal */
@@ -283,31 +288,34 @@ footer {
   background-color: #fff;
   border: 2px solid #e0e0e0;
   border-radius: 12px;
-  padding: 25px 10px;
-  max-width: 160px;
+  padding: 20px 10px;
+  width: 150px;
+  height: 150px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .tech-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-.tech-card i {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
+.tech-card i,
 .tech-card img.custom-icon {
+  font-size: 40px;
   height: 40px;
+  width: auto;
   margin-bottom: 10px;
 }
 
 .tech-card p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 
