@@ -1,11 +1,11 @@
 import { Renderer, Program, Mesh, Triangle } from 'https://cdn.skypack.dev/ogl';
 
 export function initLiquidChrome({
-  baseColor = [0.1, 0.1, 0.1],
-  speed = 1,
-  amplitude = 0.6,
-  frequencyX = 3,
-  frequencyY = 3,
+  baseColor = [0.05, 0.05, 0.05], // dark chrome-like black
+  speed = 0.4,
+  amplitude = 0.3,
+  frequencyX = 10,
+  frequencyY = 10,
   interactive = true,
 } = {}) {
   const container = document.getElementById("liquid-background");
