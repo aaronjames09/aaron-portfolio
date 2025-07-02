@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #2f2f2f;
+  color: #fff;
   background-color: transparent;
   line-height: 1.6;
   overflow-x: hidden;
@@ -102,7 +102,7 @@ section h2 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 25px;
-  background: linear-gradient(90deg, #2b5876, #4e4376);
+  background: linear-gradient(90deg, #c0ccd4, #4e4376);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -461,6 +461,7 @@ footer {
 
 #liquid-background {
   position: fixed;
+  pointer-events: auto; /* ← this is critical */
   top: 0;
   left: 0;
   z-index: -10;
