@@ -25,7 +25,50 @@ export function initLiquidChrome({
     }
   `;
 
-  const fragmentShader = `...`; // (use same shader as in your code)
+  const fragmentShader = `
+    precision highp float;
+
+    uniform float uTime;
+    uniform vec3 uBaseColor;
+    uniform vec2 uMouse;
+    uniform vec3 uResolution;
+    uniform float uAmplitude;
+    uniform float uFrequencyX;
+    uniform float uFrequencyY;
+
+    varying vec2 vUv;
+
+    float random(vec2 st) {
+      return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
+    }
+
+    float noise(vec2 st) {
+      vec2 i = floor(st);
+      vec2 f = fract(st);
+      float a = random(i);
+      float b = random(i + vec2(1.0, 0.0));
+      float c = random(i + vec2(0.0, 1.0));
+      float d = random(i + vec2(1.0, 1.0));
+      vec2 u = f * f * (3.0 - 2.0 * f);
+      return mix(a, b, u.x) +
+            (c - a) * u.y * (1.0 - u.x) +
+            (d - b) * u.x * u.y;
+    }
+
+    void main() {
+      vec2 st = gl_FragCoord.xy / uResolution.xy;
+      vec2 uv = vUv;
+
+      float t = uTime * 0.5;
+      vec2 mouse = uMouse;
+
+      float n = noise(uv * vec2(uFrequencyX, uFrequencyY) + t);
+      float distorted = sin(n * 10.0 + t * 2.0) * uAmplitude;
+
+      vec3 color = uBaseColor + vec3(distorted);
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
 
   const geometry = new Triangle(gl);
   const program = new Program(gl, {
