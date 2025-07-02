@@ -18,6 +18,7 @@
     </style>
   </head>
   <body>
+    <div id="liquid-background"></div>
     <!-- Loader Screen -->
     <div id="loader-wrapper">
       <div class="loader"></div>
@@ -272,6 +273,10 @@
           closeEmailModal();
         }
       });
+    </script>
+    <script type="module">
+      import { initLiquidChrome } from "./LiquidChrome.js";
+      initLiquidChrome();
     </script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "ogl": "^1.0.11"
   }
 }
