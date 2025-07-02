@@ -88,7 +88,7 @@ section {
   background: rgba(0, 0, 0, 0.4);
   background-color: #0d0d0d;
   backdrop-filter: blur(4px); /* optional for glass effect */
-  border-radius: 16px;
+  border-radius: 6px;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   background-clip: padding-box;
@@ -155,7 +155,7 @@ section ul li {
 .experience-entry h3 {
   font-size: 22px;
   margin-bottom: 5px;
-  color: #333;
+  color: #fff;
   text-align: center;
 }
 
@@ -498,7 +498,7 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: shine 2.4s linear infinite;
+  animation: shine 4s linear infinite;
   pointer-events: none;
 }
 
