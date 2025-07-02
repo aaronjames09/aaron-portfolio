@@ -127,28 +127,14 @@ section ul li {
 }
 
 /* Specific Section Backgrounds */
-#about {
-  background-color: #f1e6d7;
-}
-
-#education {
-  background-color: #e9d7bd;
-}
-
-#techstack {
-  background-color: #f1e6d7;
-}
-
-#certifications {
-  background-color: #e9d7bd;
-}
-
+#about,
+#education,
+#techstack,
+#experience,
+#certifications,
 #courses {
-  background-color: #f1e6d7;
-}
-
-#experience {
-  background-color: #e9d7bd;
+  background-color: rgba(255, 255, 255, 0.8); /* or try 0.7 or 0.6 */
+  backdrop-filter: blur(8px); /* for glass-like feel */
 }
 
 /* Experience Section */
