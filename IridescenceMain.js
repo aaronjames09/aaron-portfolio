@@ -1,7 +1,7 @@
 const { Renderer, Program, Mesh, Color, Triangle } = window.ogl;
 
 export function initIridescence({
-  color = [0.05, 0.05, 0.1],
+  color = [0.2, 0.2, 0.35],
   speed = 1.0,
   amplitude = 0.1,
   mouseReact = true,
