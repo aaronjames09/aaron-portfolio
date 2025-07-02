@@ -146,11 +146,11 @@ section ul li {
   background-color: #f1e6d7;
 }
 
-/* Experience Section */
 #experience {
   background-color: #e9d7bd;
 }
 
+/* Experience Section */
 .experience-entry {
   margin-bottom: 40px;
   text-align: left;
@@ -183,25 +183,38 @@ section ul li {
   font-size: 15px;
 }
 
-.custom-icon-small {
-  height: 28px;
-  width: auto;
-  margin-top: 4px;
-}
-
+/* Tech Icons */
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
   margin-top: 10px;
 }
 
 .tech-icons i,
-.tech-icons img.custom-icon-small {
-  font-size: 28px;
-  height: 28px;
-  width: auto;
-  color: #333;
+.tech-icons img {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-icons i {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icons i:hover,
+.tech-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Courses */
@@ -265,6 +278,7 @@ footer {
   padding-left: 0;
 }
 
+/* Email Modal */
 .email-modal {
   display: none;
   position: fixed;
@@ -393,7 +407,6 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Hover glow effect */
 .tech-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
@@ -492,58 +505,6 @@ footer {
   }
 }
 
-.shiny-text.disabled {
-  animation: none;
-}
-
-.star-border-container {
-  display: inline-block;
-  position: relative;
-  margin-left: 10px;
-  border-radius: 20px;
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-.inner-content {
-  position: relative;
-  border: 1px solid #222;
-  background: #000;
-  padding: 6px 14px;
-  border-radius: 20px;
-  z-index: 1;
-  display: inline-block;
-}
-
-.border-gradient-top,
-.border-gradient-bottom {
-  position: absolute;
-  width: 300%;
-  height: 50%;
-  opacity: 0.7;
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.border-gradient-bottom {
-  bottom: -12px;
-  right: -250%;
-  animation: star-movement-bottom 4s linear infinite alternate;
-}
-
-.border-gradient-top {
-  top: -12px;
-  left: -250%;
-  animation: star-movement-top 4s linear infinite alternate;
-}
-
-.inner-content a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: "Montserrat";
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   header {
@@ -594,39 +555,6 @@ footer {
   .certificate img {
     width: 80%;
   }
-}
-
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.tech-icons i,
-.tech-icons img {
-  background: white;
-  border-radius: 12px;
-  padding: 10px;
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tech-icons i {
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tech-icons i:hover,
-.tech-icons img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 480px) {
