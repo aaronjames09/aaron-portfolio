@@ -10,9 +10,11 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background-color: #111;
+  background-color: linear-gradient(120deg, #1a1a1a, #2c2c2c);
   line-height: 1.6;
   overflow-x: hidden;
+  animation: metallicShift 10s linear infinite;
+  background-size: 400% 400%;
 }
 
 * {
@@ -508,6 +510,18 @@ footer {
   }
   100% {
     background-position: -100%;
+  }
+}
+
+@keyframes metallicShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
