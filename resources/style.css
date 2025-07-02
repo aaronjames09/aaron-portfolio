@@ -1,5 +1,4 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
 
 /* Global Styles */
 html {
@@ -109,20 +108,17 @@ section h2 {
   text-align: center;
 }
 
-section p,
-section ul {
-  font-family: "Montserrat";
-}
-
 section p {
   margin: 0 0 15px 0;
   line-height: 1.6;
   font-size: 16px;
+  font-family: "Montserrat";
 }
 
 section ul {
   margin-top: 15px;
   padding-left: 20px;
+  font-family: "Montserrat";
 }
 
 section ul li {
@@ -134,18 +130,27 @@ section ul li {
   background-color: #f1e6d7;
 }
 
-#education,
-#certifications,
-#experience {
+#education {
   background-color: #e9d7bd;
 }
 
-#techstack,
+#techstack {
+  background-color: #f1e6d7;
+}
+
+#certifications {
+  background-color: #e9d7bd;
+}
+
 #courses {
   background-color: #f1e6d7;
 }
 
 /* Experience Section */
+#experience {
+  background-color: #e9d7bd;
+}
+
 .experience-entry {
   margin-bottom: 40px;
   text-align: left;
@@ -178,12 +183,17 @@ section ul li {
   font-size: 15px;
 }
 
+.custom-icon-small {
+  height: 28px;
+  width: auto;
+  margin-top: 4px;
+}
+
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
-  justify-content: center;
 }
 
 .tech-icons i,
@@ -192,18 +202,6 @@ section ul li {
   height: 28px;
   width: auto;
   color: #333;
-  transition: transform 0.2s ease;
-}
-
-.tech-icons i:hover,
-.tech-icons img.custom-icon-small:hover {
-  transform: scale(1.2);
-}
-
-.custom-icon-small {
-  height: 28px;
-  width: auto;
-  margin-top: 4px;
 }
 
 /* Courses */
@@ -265,4 +263,353 @@ footer {
 #certifications ul {
   list-style: none;
   padding-left: 0;
+}
+
+.email-modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.email-modal-content {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  color: #1e1e1e;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+
+.close-email {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: -1;
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: fadeIn 0.4s ease-in-out;
+  border: 5px solid #060606;
+  box-shadow: 0 0 20px rgba(38, 43, 55, 0.7);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Tech Stack Grid */
+.tech-stack-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.tech-stack-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-bottom: 30px;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 25px 10px;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover glow effect */
+.tech-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(95, 119, 199, 0.5);
+}
+
+.tech-card i,
+.tech-card img.custom-icon {
+  font-size: 40px;
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Loader */
+#loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: #1e1e1e;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #5f77c7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.2s linear infinite;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded #loader-wrapper {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animated Shine Text */
+.shiny-text {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.shiny-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 2.4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
+
+.star-border-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.inner-content {
+  position: relative;
+  border: 1px solid #222;
+  background: #000;
+  padding: 6px 14px;
+  border-radius: 20px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.border-gradient-top,
+.border-gradient-bottom {
+  position: absolute;
+  width: 300%;
+  height: 50%;
+  opacity: 0.7;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.border-gradient-bottom {
+  bottom: -12px;
+  right: -250%;
+  animation: star-movement-bottom 4s linear infinite alternate;
+}
+
+.border-gradient-top {
+  top: -12px;
+  left: -250%;
+  animation: star-movement-top 4s linear infinite alternate;
+}
+
+.inner-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .semester {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .certificate img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section p {
+    font-size: 12px;
+  }
 }
