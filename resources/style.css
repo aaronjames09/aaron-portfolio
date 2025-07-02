@@ -133,7 +133,7 @@ section ul li {
 #experience,
 #certifications,
 #courses {
-  background-color: rgba(255, 255, 255, 0.8); /* or try 0.7 or 0.6 */
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px); /* for glass-like feel */
 }
 

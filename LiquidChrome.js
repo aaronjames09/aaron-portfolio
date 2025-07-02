@@ -1,4 +1,4 @@
-import { Renderer, Program, Mesh, Triangle } from "ogl";
+import { Renderer, Program, Mesh, Triangle } from 'https://cdn.skypack.dev/ogl';
 
 export function initLiquidChrome({
   baseColor = [0.1, 0.1, 0.1],
