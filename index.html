@@ -16,9 +16,13 @@
         text-align: center;
       }
     </style>
+    <script type="module">
+      import * as ogl from "https://cdn.skypack.dev/ogl";
+      window.ogl = ogl;
+    </script>
   </head>
   <body>
-    <div id="liquid-background"></div>
+    <div id="iridescence-background"></div>
     <!-- Loader Screen -->
     <div id="loader-wrapper">
       <div class="loader"></div>
@@ -26,6 +30,7 @@
     </div>
     <header>
       <div class="container">
+        <div id="main-content">
         <h1>Aaron James</h1>
         <nav class="nav-right">
           <ul>
@@ -40,6 +45,7 @@
             <li><a href="#" onclick="showEmailPopup()" class="shiny-text" data-text=""><i class="far fa-envelope"></i></a></li>
           </ul>
         </nav>
+        </div>
       </div>
     </header>
     <section id="about" class="container">
@@ -274,9 +280,6 @@
         }
       });
     </script>
-    <script type="module">
-      import { initLiquidChrome } from "./LiquidChrome.js";
-      initLiquidChrome();
-    </script>
+    <script type="module" src="IridescenceMain.js"></script>
   </body>
 </html>
