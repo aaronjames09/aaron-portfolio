@@ -1,7 +1,7 @@
 const { Renderer, Program, Mesh, Color, Triangle } = window.ogl;
 
 export function initIridescence({
-  color = [1, 1, 1],
+  color = [0.05, 0.05, 0.1],
   speed = 1.0,
   amplitude = 0.1,
   mouseReact = true,
@@ -11,7 +11,7 @@ export function initIridescence({
 
   const renderer = new Renderer();
   const gl = renderer.gl;
-  gl.clearColor(1, 1, 1, 1);
+  gl.clearColor(0, 0, 0, 1);
 
   const vertexShader = `
     attribute vec2 uv;
