@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(54, 25, 25, 1) 50%, rgba(122, 34, 34, 1) 100%);  
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);   
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ body {
 
 /* Header */
 header {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 10px 0;
   display: flex;
@@ -497,9 +497,8 @@ footer {
 
 .fade-in-section {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .fade-in-section.visible {
