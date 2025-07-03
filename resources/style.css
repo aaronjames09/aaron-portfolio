@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background: linear-gradient(to right, #070809, #1a2325, #0f2027);
+  background: linear-gradient(to right, #000000, #1e2628, #223c49);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ body {
 
 /* Header */
 header {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 4, 35, 0.5);
   color: #fff;
   padding: 10px 0;
   display: flex;
