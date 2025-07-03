@@ -27,7 +27,7 @@ body {
 
 /* Header */
 header {
-  background: #fff;
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   padding: 10px 0;
   display: flex;
@@ -90,13 +90,9 @@ section {
   backdrop-filter: blur(4px); /* optional for glass effect */
   border-radius: 6px;
   margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
   background-clip: padding-box;
   color: white;
-}
-
-section + section {
-  margin-top: 20px;
 }
 
 section h2 {
