@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background-color: #010000;
+  background-color: linear-gradient(135deg, #000, #1a1a1a, #333);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -86,7 +86,7 @@ section {
   padding: 1rem;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.4);
-  background-color: #0d0d0d;
+  background-color: linear-gradient(135deg, #000, #1a1a1a, #333)	;
   backdrop-filter: blur(4px); /* optional for glass effect */
   border-radius: 6px;
   margin: 20px 0;
@@ -162,7 +162,7 @@ section ul li {
 .experience-entry p {
   font-size: 14px;
   font-style: italic;
-  color: #555;
+  color: #fef;
   margin-bottom: 10px;
   text-align: center;
 }
