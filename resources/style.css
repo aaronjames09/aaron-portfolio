@@ -83,13 +83,13 @@ nav ul li a i {
 /* Section Styling */
 section {
   margin: 0;
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.4);
   background: linear-gradient(135deg, #000, #1a1a1a, #333)	;
   backdrop-filter: blur(4px); /* optional for glass effect */
-  border-radius: 6px;
-  margin: 20px 0;
+  border-radius: 2px;
+  margin: 0;
   box-shadow: none;
   background-clip: padding-box;
   color: white;
