@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background: linear-gradient(135deg, #000, #1a1a1a, #333);
+  background: linear-gradient(101deg,rgba(0, 0, 0, 1) 0%, rgba(54, 22, 22, 1) 50%, rgba(128, 36, 36, 1) 100%);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -22,7 +22,7 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2px;
 }
 
 /* Header */
@@ -82,12 +82,11 @@ nav ul li a i {
 
 /* Section Styling */
 section {
+  background: transparent !important;
+  backdrop-filter: none !important;
   margin: 0;
   padding: 2rem 1rem;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.4);
-  background: linear-gradient(135deg, #000, #1a1a1a, #333)	;
-  backdrop-filter: blur(4px); /* optional for glass effect */
   border-radius: 2px;
   margin: 0;
   box-shadow: none;
@@ -128,17 +127,6 @@ section ul {
 
 section ul li {
   margin-bottom: 8px;
-}
-
-/* Specific Section Backgrounds */
-#about,
-#education,
-#techstack,
-#experience,
-#certifications,
-#courses {
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(8px); /* for glass-like feel */
 }
 
 /* Experience Section */
