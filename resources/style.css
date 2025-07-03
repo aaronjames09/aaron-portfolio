@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #f5f5f5;
-  background: linear-gradient(101deg,rgba(0, 0, 0, 1) 0%, rgba(54, 22, 22, 1) 50%, rgba(128, 36, 36, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(54, 25, 25, 1) 50%, rgba(122, 34, 34, 1) 100%);  
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -27,7 +27,7 @@ body {
 
 /* Header */
 header {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 10px 0;
   display: flex;
@@ -220,7 +220,7 @@ section ul li {
 
 /* Footer */
 footer {
-  background: transparent;
+  background: #000;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -493,6 +493,18 @@ footer {
   100% {
     background-position: -100%;
   }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Responsive Styles */
